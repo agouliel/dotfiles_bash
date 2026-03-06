@@ -1,3 +1,14 @@
+### GIT ###
+# show main branch
+gmainb_fn() {
+  git remote show origin | grep 'HEAD branch' | awk '{print $3}'
+}
+
+# show current branch
+gcurrb_fn() {
+  git branch | grep '*' | awk '{print $2}'
+}
+
 gcp() {
   mycomment="";
   for item in "$@"; do mycomment+=$item; mycomment+=" "; done;

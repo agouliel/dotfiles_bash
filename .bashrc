@@ -123,5 +123,21 @@ source "/home/agou/.openclaw/completions/openclaw.bash"
 . "$HOME/.local/bin/env"
 . "$HOME/.cargo/env"
 
-source .env
+### VARIABLES ###
+if [ -f ~/.env ]; then
+  source ~/.env # dotenv files should not be shell scripts, but anyway...
+fi
+
+### FUNCTIONS ###
+if [ -f ~/.functions ]; then
+  source ~/.functions
+fi
+
+### WORK ###
+if [ -f ~/.ionia ]; then
+  source ~/.ionia
+fi
+if [ -f ~/.digitech ]; then
+  source ~/.digitech
+fi
 

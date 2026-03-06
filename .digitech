@@ -1,0 +1,9 @@
+### VARIABLES ###
+export AWSECRAddress=211125763208.dkr.ecr.eu-central-1.amazonaws.com
+export namespace=digitech-marketing
+export repository_api=igaming-platform-monorepo
+export repository_api_namespaced=$namespace/$repository_api
+
+### ALIAS ###
+alias digi="cd /Users/Shared/src/digitech_src"
+

@@ -1,0 +1,8 @@
+gcp() {
+  mycomment="";
+  for item in "$@"; do mycomment+=$item; mycomment+=" "; done;
+  git add .;
+  git commit -m "$mycomment";
+  git push origin `gcurrb_fn`
+}
+
